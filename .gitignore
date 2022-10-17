@@ -1,0 +1,3 @@
+testmodule.egg-info/*
+dist/*
+build/*
