@@ -19,9 +19,12 @@ if __name__ == "__main__":
 
 ## The main module file
 
-Create a new CPP file
+Create a new CPP file.
+```
+testModule.cpp
+```
 
-Create an initialse function
+Then make an initialse function
 ```c++
 #include <stdio.h>
 
