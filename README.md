@@ -101,4 +101,4 @@ Simply run `python setup.py install` in powershell and the module will install i
 
 ## Recompiling
 
-**Make sure to delete the testmodule.egg-info file before recompiling to avoid
+**Make sure to delete the testmodule.egg-info file before recompiling to avoid errors**
