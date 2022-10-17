@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
 ## The main module file
 
-Create a new CPP file.
+Create a new CPP file
 ```
 testModule.cpp
 ```
