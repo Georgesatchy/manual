@@ -19,9 +19,9 @@ if __name__ == "__main__":
 
 ## The main module file
 
-- Create a new CPP file
+Create a new CPP file
 
-- Create an initialse function
+Create an initialse function
 ```c++
 #include <stdio.h>
 
@@ -31,7 +31,7 @@ PyMODINIT_FUNC PyInit_testModule () {
 };
 ```
 
-- Define the module, setting the MODULENAME and MODULEDOC
+Define the module, setting the MODULENAME and MODULEDOC
 ```c++
 #include <Python.h>
 
@@ -43,7 +43,7 @@ static struct PyModuleDef testModule = {
 };
 ```
 
-- Edit the PyInit function to include the testModule struct
+Edit the PyInit function to include the testModule struct
 ```c++
 PyMODINIT_FUNC PyInit_testModule () {
     printf("This message prints into the console when the method is imported\n");
@@ -51,7 +51,7 @@ PyMODINIT_FUNC PyInit_testModule () {
 };
 ```
 
-- Create your module's first method
+Create your module's first method
 ```c++
 PyObject *exampleAdd(PyObject *self, PyObject *args) {
     int x;
@@ -62,7 +62,7 @@ PyObject *exampleAdd(PyObject *self, PyObject *args) {
 };
 ```
 
-- Create a struct which stores the method, as well as any future methods
+Create a struct which stores the method, as well as any future methods
 ```c++
 static PyMethodDef methods[] {
     { "example_add", exampleAdd, METH_VARARGS, "Adds two numbers together" },
@@ -70,7 +70,7 @@ static PyMethodDef methods[] {
 };
 ```
 
-- Edit the testModule struct to include the new methods struct
+Edit the testModule struct to include the new methods struct
 ```c++
 static struct PyModuleDef testModule = {
     PyModuleDef_HEAD_INIT,
@@ -81,7 +81,7 @@ static struct PyModuleDef testModule = {
 };
 ```
 
-- All done!
+All done!
 
 ## Compiling the CPP code into a fully functioning module
 
